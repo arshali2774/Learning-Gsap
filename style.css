@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 1rem;
+}
+.mousePos {
+  background: black;
+  color: white;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+}
+
+.container {
+  background-color: #dddddd;
+  height: 100%;
+  display: grid;
+  place-content: center start;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.brown {
+  background-color: brown;
+  width: 100px;
+  height: 100px;
+}
+.green {
+  background-color: rgb(8, 178, 8);
+  width: 100px;
+  height: 100px;
+}
+.cream {
+  background-color: cornsilk;
+  width: 100px;
+  height: 100px;
+}
