@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 2rem;
+  background-color: #ddd;
+}
+
+#section-1 {
+  height: 100vh;
+}
+
+#section-2 {
+  height: 100vh;
+}
+#section-3 {
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  margin-left: 40%;
+  margin-top: 10%;
+  transform: rotate(-30deg);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.images {
+  display: grid;
+  gap: 1rem;
+  grid-template:
+    'top top'
+    'b-l b-r';
+}
+.images img:nth-child(1) {
+  grid-area: top;
+}
+.images img:nth-child(2) {
+  grid-area: b-l;
+}
+.images img:nth-child(3) {
+  grid-area: b-r;
+}
+.images.state-2 img:nth-child(1) {
+  grid-area: b-r;
+}
+.images.state-2 img:nth-child(2) {
+  grid-area: top;
+}
+.images.state-2 img:nth-child(3) {
+  grid-area: b-l;
+}
+.images.state-3 img:nth-child(1) {
+  grid-area: b-l;
+}
+.images.state-3 img:nth-child(2) {
+  grid-area: b-r;
+}
+.images.state-3 img:nth-child(3) {
+  grid-area: top;
+}
+img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.images-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template:
+    'top top'
+    'b-l b-r';
+}
+
+/* .img1 {
+  grid-area: top;
+}
+.img2 {
+  grid-area: b-l;
+}
+.img3 {
+  grid-area: b-r;
+}
+
+.img1.state-2 {
+  grid-area: b-r;
+}
+.img2.state-2 {
+  grid-area: top;
+}
+.img3.state-2 {
+  grid-area: b-l;
+}
+
+.img1.state-3 {
+  grid-area: b-l;
+}
+.img2.state-3 {
+  grid-area: b-r;
+}
+.img3.state-3 {
+  grid-area: top;
+} */
+
+.images-grid img:nth-child(1) {
+  grid-area: top;
+}
+.images-grid img:nth-child(2) {
+  grid-area: b-l;
+}
+.images-grid img:nth-child(3) {
+  grid-area: b-r;
+}
+
+.images-grid.state-2 img:nth-child(1) {
+  grid-area: b-r;
+}
+
+.images-grid.state-2 img:nth-child(2) {
+  grid-area: top;
+}
+
+.images-grid.state-2 img:nth-child(3) {
+  grid-area: b-l;
+}
+
+.images-grid.state-3 img:nth-child(1) {
+  grid-area: b-l;
+}
+
+.images-grid.state-3 img:nth-child(2) {
+  grid-area: b-r;
+}
+
+.images-grid.state-3 img:nth-child(3) {
+  grid-area: top;
+}
