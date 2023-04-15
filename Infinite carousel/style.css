@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  background-color: #ddd;
+  height: 100vh;
+}
+
+.wrapper {
+  overflow: hidden;
+  border: 3px solid yellow;
+  width: 450px;
+  height: 100px;
+  display: flex;
+  place-items: center;
+}
+
+.boxes {
+  border: 2px solid brown;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  left: -30px;
+}
+
+.box {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  color: white;
+  display: grid;
+  place-content: center;
+  background-color: black;
+}
